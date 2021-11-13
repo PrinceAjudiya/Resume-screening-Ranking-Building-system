@@ -1,0 +1,2 @@
+Skills:
+Python , HTML , Java Script

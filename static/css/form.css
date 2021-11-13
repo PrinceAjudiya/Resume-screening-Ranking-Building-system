@@ -1,0 +1,14 @@
+.card.light-version .file-field input[type=text] {
+border-bottom: 1px solid #fff; }
+.card.light-version .file-field input[type=text]::-webkit-input-placeholder {
+color: #fff;
+font-weight: 300; }
+.card.light-version .file-field input[type=text]::-moz-placeholder {
+color: #fff;
+font-weight: 300; }
+.card.light-version .file-field input[type=text]:-ms-input-placeholder {
+color: #fff;
+font-weight: 300; }
+.card.light-version .file-field input[type=text]::placeholder {
+color: #fff;
+font-weight: 300; }

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Result Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+	<script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js')}}"></script>
+</head>
+<body>
+
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+		<nav class="gtco-nav" role="navigation">
+			<div class="gtco-container">
+				
+				<div class="row">
+					<div class="col-sm-2 col-xs-12">
+						<div id="gtco-logo"><a href="index.html"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="Free HTML5 Website Template by FreeHTML5.co"></a></div>
+					</div>
+		
+				</div>
+				
+			</div>
+		</nav>
+
+		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="row">
+									<div class="col-md-8 animate-box">
+										<h1 class="no-margin">Resume Ranking</h1>
+										<p>Rank will given according to percentage match with the Job Description..</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<br><br><br>
+		
+		
+		
+						<div class="gtco-services gtco-section">
+			<div class="gtco-container">
+		
+				<div class="row-pb-md">
+					<div class="service-wrap">
+						<div class="service">
+				<center><h1><span class="iconify" data-icon="mdi:medal"></span>Resume Ranking</h1></center>
+							<table style="border:2px solid black; width:600px;margin:auto;background-color:#ffffff ;">
+		
+
+		</tr>
+		<tr>
+		<br><br><br>
+		</tr>
+         {% for item in result %}
+            <tr>
+			   <td> {{ loop.index }}</td>
+               <td> {{ item[0] }} </td>
+               <td> {{ item[1] }} </td>
+            </tr>
+         {% endfor %}
+    </table>
+	<br><br><br>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+		
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/magnific-popup-options.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+	<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+	</body>
+</html>
